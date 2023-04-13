@@ -21,6 +21,7 @@ namespace Day_3A_Practice_Problem
                 Console.WriteLine("Select Option 3");
                 Console.WriteLine("Select Option 4");
                 Console.WriteLine("Select Option 5");
+                Console.WriteLine("Select Option 6");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -67,9 +68,26 @@ namespace Day_3A_Practice_Problem
                         account.Withdraw(1000);
                         account.DisplayBalance();
                         break;
+
+                        case 6:
+                        int a = 10;  // value type
+                        int b = a;   // value type
+                        a = 20;
+                        Console.WriteLine($"a = {a}, b = {b}");
+                        ValueTypeAndReferenceType p1 = new ValueTypeAndReferenceType { X = 10, Y = 20 };  // value type
+                        ValueTypeAndReferenceType p2 = p1;                           // value type
+                        p1.X = 30;
+                        Console.WriteLine($"p1.X = {p1.X}, p2.X = {p2.X}");
+                        Person person = new Person { Name = "John", Age = 30 };  // reference type
+                        Person personobj = person;                               // reference type
+                        person.Age = 40;
+                        Console.WriteLine($"person1.Age = {person.Age}, person2.Age = {personobj.Age}");
+                        Console.ReadLine();
+                        break;
                 }
+            }
             }
             
         }
     }
-}
+
