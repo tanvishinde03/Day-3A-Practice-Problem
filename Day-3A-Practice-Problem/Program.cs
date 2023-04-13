@@ -18,6 +18,7 @@ namespace Day_3A_Practice_Problem
                 Console.WriteLine(" Plase enter the option");
                 Console.WriteLine("Select Option 1");
                 Console.WriteLine("Select Option 2");
+                Console.WriteLine("Select Option 3");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -41,6 +42,15 @@ namespace Day_3A_Practice_Problem
                         Dog dog = new Dog();
                         dog.Eat();
                         dog.Bark();
+                        Console.ReadLine();
+                        break;
+
+                    case 3:
+                        MethodOverLoading obj = new MethodOverLoading();
+                        obj.Add(10, 20);
+                        obj.Add(10.5f, 20.5f);
+                        obj.Add("Tanvi", "Shinde");
+                        Console.ReadLine();
                         break;
                 }
             }

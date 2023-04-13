@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ClassNObject.cs" />
     <Compile Include="Animal.cs" />
+    <Compile Include="MethodOverLoading.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
