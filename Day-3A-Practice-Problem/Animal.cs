@@ -20,7 +20,7 @@ namespace Day_3A_Practice_Problem
     }
 
     // Define a derived class called "Dog" that inherits from "Animal"
-    class Dog : Animal
+    class Pug : Animal
     {
         // Class method
         public void Bark()

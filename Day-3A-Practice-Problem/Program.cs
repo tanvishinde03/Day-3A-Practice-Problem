@@ -19,6 +19,7 @@ namespace Day_3A_Practice_Problem
                 Console.WriteLine("Select Option 1");
                 Console.WriteLine("Select Option 2");
                 Console.WriteLine("Select Option 3");
+                Console.WriteLine("Select Option 4");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -39,9 +40,9 @@ namespace Day_3A_Practice_Problem
                         break;
 
                     case 2:
-                        Dog dog = new Dog();
-                        dog.Eat();
-                        dog.Bark();
+                        Pug pug = new Pug();
+                        pug.Eat();
+                       pug.Bark();
                         Console.ReadLine();
                         break;
 
@@ -50,6 +51,17 @@ namespace Day_3A_Practice_Problem
                         obj.Add(10, 20);
                         obj.Add(10.5f, 20.5f);
                         obj.Add("Tanvi", "Shinde");
+                        Console.ReadLine();
+                        break;
+                    case 4:
+                        MethodOverriding animal1 = new MethodOverriding();
+                        MethodOverriding animal2 = new Dog();
+                        MethodOverriding animal3 = new Cat();
+
+                        // call MakeSound() method on each object
+                        animal1.Speak();
+                        animal2.Speak();
+                        animal3.Speak();
                         Console.ReadLine();
                         break;
                 }
