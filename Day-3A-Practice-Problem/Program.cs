@@ -15,25 +15,22 @@ namespace Day_3A_Practice_Problem
             while (flag)
             {
 
-                Console.WriteLine(" Plase enter the option");
+                Console.WriteLine("\n Plase enter the option");
                 Console.WriteLine("Select Option 1");
                 Console.WriteLine("Select Option 2");
                 Console.WriteLine("Select Option 3");
                 Console.WriteLine("Select Option 4");
+                Console.WriteLine("Select Option 5");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
                     case 1:
-
                         ClassNObject person1 = new ClassNObject(); // Creating object
                         ClassNObject person2 = new ClassNObject();
-
                         person1.Name = "Tanvi";
                         person1.Age = 22;
-
                         person2.Name = "Aarti";
                         person2.Age = 22;
-
                         person1.SayHello();
                         person2.SayHello();
                         Console.ReadLine();
@@ -57,12 +54,18 @@ namespace Day_3A_Practice_Problem
                         MethodOverriding animal1 = new MethodOverriding();
                         MethodOverriding animal2 = new Dog();
                         MethodOverriding animal3 = new Cat();
-
-                        // call MakeSound() method on each object
                         animal1.Speak();
                         animal2.Speak();
                         animal3.Speak();
                         Console.ReadLine();
+                        break;
+
+                    case 5:
+                        BankAccount account = new BankAccount("12345", 1000);
+                        account.Deposit(500);
+                        account.Withdraw(2000);
+                        account.Withdraw(1000);
+                        account.DisplayBalance();
                         break;
                 }
             }
